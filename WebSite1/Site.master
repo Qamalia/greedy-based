@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 3.0 License
+
+Name       : FullyCharge 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20120604
+
+-->
+<html xmlns="">
+<head>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Semester Planner</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery.poptrox-1.0.js"></script>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+       <div id="header-wrapper">
+	    <div id="header" class="container">
+		    <div id="logo">
+			    <h1><a href="#">Semester Planner</a></h1>
+		</div>
+	    </div>
+	    <div id="menu">
+		    <ul>
+			    <li class="current_page_item"><a href="homepage.aspx">Homepage</a></li>
+			    <li><a href="planner.aspx">Planner</a></li>
+			    <li><a href="me.aspx">Me</a></li>
+			    <li><a href="index.aspx">Logout</a></li>
+		    </ul>
+	    </div>
+    </div>
+<!-- end #header -->
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+
+	</div>
+   <!-- end #footer -->
+    </div>
+    </form>
+</body>
+</html>
